@@ -3,7 +3,7 @@ const session = require("express-session");
 const passport = require("./passport_config");
 const bodyParser = require("body-parser");
 const routes = require("./routes");
-const dummyData = require("./dummy_data"); // Should be here to passport contact with DB
+const dummyData = require("./dummy_data");
 
 const app = express();
 const port = 3000;
@@ -14,7 +14,7 @@ app.use(
 		resave: false,
 		saveUninitialized: false,
 		cookie: {
-			maxAge: 200000, // 200 seconds (in milliseconds)
+			maxAge: 60000, // 60 seconds (in milliseconds)
 		},
 	})
 );
