@@ -10,5 +10,6 @@
 * Can check other dependencies and version in package.json
 
 ## Note
-* Session Timout set as 200s. As per your configuration, you can configure.
+* Session Timeout set as 200s. As per your configuration, you can configure.
 * Here for further password encryption can use bcrypt to encrypt. but per project requirements and considering the time password typed without encryption.
+* Folder Structure management needs to be done.
