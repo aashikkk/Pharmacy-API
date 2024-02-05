@@ -2,7 +2,7 @@
 
 ## Setup the project
 * In the project directory, type `npm install` to install and initiate the modules.
-* Import the `Pharmacy.postman_collection.json` to Postman to check endpoints.
+* Import the `Postman/Pharmacy.postman_collection.json` to Postman to check endpoints 
 * To check the user role access, copy username and password from dummydate to login (users table).
 
 ## Project Requirements
@@ -12,4 +12,3 @@
 ## Note
 * Session Timeout set as 200s. As per your configuration, you can configure.
 * Here for further password encryption can use bcrypt to encrypt. but per project requirements and considering the time password typed without encryption.
-* Folder Structure management needs to be done.
