@@ -1,9 +1,9 @@
 const express = require("express");
 const session = require("express-session");
-const passport = require("./passport_config");
+const passport = require("./middleware/passport_config");
 const bodyParser = require("body-parser");
-const routes = require("./routes");
-const dummyData = require("./dummy_data");
+const routes = require("./routes/routes");
+const dummyData = require("./db/dummy_data");
 
 const app = express();
 const port = 3000;

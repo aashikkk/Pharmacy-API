@@ -3,7 +3,7 @@ const db = new sqlite3.Database(":memory:");
 
 // Create tables
 db.serialize(() => {
-  db.run(`
+	db.run(`
   CREATE TABLE IF NOT EXISTS users (
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
     fullname VARCHAR(255),
@@ -14,7 +14,7 @@ db.serialize(() => {
   )
   `);
 
-  db.run(`
+	db.run(`
   CREATE TABLE IF NOT EXISTS medication (
     med_id INTEGER PRIMARY KEY AUTOINCREMENT,
     med_name VARCHAR(100),
@@ -24,7 +24,7 @@ db.serialize(() => {
   )
   `);
 
-  db.run(`
+	db.run(`
   CREATE TABLE IF NOT EXISTS customers (
     customer_id INTEGER PRIMARY KEY AUTOINCREMENT,
     customer_name VARCHAR(255),
